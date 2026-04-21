@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mod Menu Free Fire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="dot"></span>
+        <strong>FF Vision</strong>
+      </div>
+      <nav>
+        <a href="#features">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button id="open-modal" class="btn btn-primary">Baixar agora</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="pill">Nova versão • Abril 2026</p>
+          <h1>Painel avançado para elevar seu jogo no Free Fire</h1>
+          <p>
+            Interface premium com configuração rápida, otimização de sensibilidade e
+            recursos inteligentes para melhorar sua experiência em partida.
+          </p>
+          <div class="hero-actions">
+            <button id="open-modal-hero" class="btn btn-primary">Começar</button>
+            <a class="btn btn-ghost" href="#features">Ver detalhes</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Status em tempo real</h2>
+          <ul>
+            <li><span>Ping médio</span><strong id="ping">35 ms</strong></li>
+            <li><span>FPS</span><strong id="fps">60</strong></li>
+            <li><span>Modo</span><strong>Otimizado</strong></li>
+          </ul>
+          <button class="btn btn-secondary" id="boost-btn">Ativar boost</button>
+        </div>
+      </section>
+
+      <section id="features" class="grid-section">
+        <h2>Recursos principais</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>HUD inteligente</h3>
+            <p>Layout adaptável por resolução com botões em posições otimizadas.</p>
+          </article>
+          <article class="card">
+            <h3>Perfil por arma</h3>
+            <p>Salve e alterne presets para AR, SMG e Sniper com um toque.</p>
+          </article>
+          <article class="card">
+            <h3>Otimizador de desempenho</h3>
+            <p>Ajuste automático para reduzir quedas de FPS e travamentos.</p>
+          </article>
+          <article class="card">
+            <h3>Painel de monitoramento</h3>
+            <p>Veja FPS, temperatura e latência em tempo real durante a partida.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="planos" class="pricing">
+        <h2>Escolha seu plano</h2>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p class="value">R$ 19,90<span>/mês</span></p>
+            <ul>
+              <li>1 dispositivo</li>
+              <li>Atualizações mensais</li>
+              <li>Suporte por e-mail</li>
+            </ul>
+            <button class="btn btn-ghost">Selecionar</button>
+          </article>
+          <article class="price-card featured">
+            <p class="tag">Mais popular</p>
+            <h3>Pro</h3>
+            <p class="value">R$ 39,90<span>/mês</span></p>
+            <ul>
+              <li>3 dispositivos</li>
+              <li>Atualizações semanais</li>
+              <li>Suporte prioritário</li>
+            </ul>
+            <button class="btn btn-primary">Selecionar</button>
+          </article>
+          <article class="price-card">
+            <h3>Elite</h3>
+            <p class="value">R$ 79,90<span>/mês</span></p>
+            <ul>
+              <li>Dispositivos ilimitados</li>
+              <li>Features beta</li>
+              <li>Suporte VIP 24/7</li>
+            </ul>
+            <button class="btn btn-ghost">Selecionar</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="faq">
+        <h2>Dúvidas frequentes</h2>
+        <details>
+          <summary>Funciona em Android e emulador?</summary>
+          <p>Sim, com perfis específicos para cada ambiente.</p>
+        </details>
+        <details>
+          <summary>Preciso configurar manualmente?</summary>
+          <p>Não. Você pode usar perfis prontos ou personalizar do seu jeito.</p>
+        </details>
+      </section>
+    </main>
+
+    <div id="download-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-card">
+        <h3>Download liberado</h3>
+        <p>Informe seu e-mail para receber o link da versão mais recente.</p>
+        <form id="lead-form">
+          <input type="email" id="email" placeholder="seuemail@exemplo.com" required />
+          <button class="btn btn-primary" type="submit">Receber link</button>
+        </form>
+        <button id="close-modal" class="btn btn-ghost">Fechar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
